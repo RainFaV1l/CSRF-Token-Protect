@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .transition-base {
+        @apply transition-all ease-in-out delay-200 placeholder:transition-all placeholder:ease-in-out placeholder:delay-200;
+    }
+
+    .header__link {
+        @apply border-b border-transparent  hover:border-white pb-1;
+    }
+    
+    .button {
+        @apply flex items-center justify-center px-8 py-3 border rounded transition-all delay-100 font-medium;
+    }
+    
+    .form-button {
+        @apply bg-purple-500;
+    }
+    
+    .button_hover-fill {
+        @apply bg-transparent border-white hover:bg-white hover:text-slate-950;
+    }
+    
+    .button_hover-outline {
+        @apply bg-white border-white hover:bg-transparent hover:border hover:text-white;
+    }
+
+    .input {
+        @apply w-96 outline-0 border border-white bg-transparent text-white rounded px-8 py-3;
+    }
+
+    .placeholder-transition {
+        @apply placeholder:text-white/75 px-4 focus:placeholder:text-transparent
+    }
+
+    .post-el {
+        @apply flex basis-1/4 flex-col border border-white rounded;
+        flex-basis: 23.8%;
+    }
+
+    .absolute-center {
+        @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+    }
+
+    .flex-x-center {
+        @apply flex flex-col items-center;
+    }
+
+
+}
+
+.select_active {
+    @apply text-white;
+}
